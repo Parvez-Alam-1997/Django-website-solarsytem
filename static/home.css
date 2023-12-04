@@ -1,0 +1,1015 @@
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    Font-family: calibri;
+}
+
+body
+{
+    height: 100vh;
+    display: flex;
+    background-color: black;
+    overflow: hidden;
+}
+
+.wrapper
+{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box
+{
+    position: absolute;
+    left: 0px;
+    translate: 5vw;
+    width: 15vw;
+    height: 50vh;
+    border-radius: 10%;
+    font-size: 8vh;
+    text-align: center;
+    text-overflow: hidden;
+    animation: text-text 4000ms -1800ms ease infinite;
+       
+}
+
+.text
+{
+    position: relative;
+    top: 20%;
+    left: 2%;
+    
+    
+}
+
+@keyframes text-text
+{
+    0%,60%,100%
+    {
+        transform:  translate(0px,0px);
+        color: black;
+        background-color: black;
+
+    }
+
+
+    70%
+    {
+        transform:  translate(0px,-15px);
+        opacity: 1;
+        color: white;
+        
+    }
+
+    80%
+    {
+        transform:  translate(0px,0px);
+    }
+}
+
+
+/* -------------------------Neptune------------------------- */
+.neptune-container
+{
+    position: absolute;
+    height: 680px;
+    width: 680px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid rgb(15, 15, 15, 0.3);
+    
+}
+
+.neptune
+{
+    animation: neptune-text 53000ms linear infinite;
+    position: static;
+    color: white;
+    
+}
+
+.neptune::before,
+.neptune::after
+{   
+    --scale:0;
+    position: absolute;
+    left: 50%;
+    top: -.25rem;
+    transform: translateX(-50%) translateY(-100%) scale(var(--scale));
+    transition: 100ms transform;
+    transform-origin: bottom center;
+    z-index: 10;
+}
+
+.neptune::before
+{
+    content: attr(data-tooltip);
+    width: max-content px;
+    background: rgba(72, 72, 74, 0.72);
+    padding: .5rem;
+    border-radius: .4rem;
+    text-align: center;
+}
+
+.neptune > a > img
+{
+    animation: neptune-img 11000ms linear infinite;
+    height: 40px;
+    width: 40px;
+    
+}
+
+.neptune:hover
+{
+    animation-play-state: paused;
+    z-index: 1000;
+    
+}
+
+.neptune:hover::before
+{
+    --scale:1;
+}
+
+.neptune > a > img:hover
+{
+    height: 60px;
+    width: 60px;
+    transition: 350ms;
+    
+}
+
+
+@keyframes neptune-text
+{
+    0%
+    {
+        transform: rotate(0deg) translate(340px) rotate(0deg);
+    }
+
+    100%
+    {
+        transform: rotate(360deg) translate(340px) rotate(-360deg);
+    }
+}
+
+@keyframes neptune-img
+{
+    0%
+    {
+        transform: rotate(0deg) translate(0) rotate(0deg);
+    }
+
+    100%
+    {
+        transform: rotate(0deg) translate(0) rotate(360deg);
+    }
+}
+
+
+
+/* -------------------------Uranus------------------------- */
+.uranus-container
+{
+    position: absolute;
+    height: 610px;
+    width: 610px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid rgb(15, 15, 15, 0.3);
+    
+}
+
+.uranus
+{
+    animation: uranus-text 47000ms linear infinite;
+    position: static;
+    color: white;
+    
+}
+
+.uranus::before,
+.uranus::after
+{   
+    --scale:0;
+    position: absolute;
+    left: 50%;
+    top: -.25rem;
+    transform: translateX(-50%) translateY(-100%) scale(var(--scale));
+    transition: 100ms transform;
+    transform-origin: bottom center;
+    z-index: 10;
+}
+
+.uranus::before
+{
+    content: attr(data-tooltip);
+    width: max-content px;
+    background: rgba(72, 72, 74, 0.72);
+    padding: .5rem;
+    border-radius: .4rem;
+    text-align: center;
+}
+
+.uranus > a > img
+{
+    animation: uranus-img 10000ms linear infinite;
+    height: 40px;
+    width: 40px;
+    
+}
+
+.uranus:hover
+{
+    animation-play-state: paused;
+    z-index: 1000;
+    
+}
+
+.uranus:hover::before
+{
+    --scale:1;
+}
+
+.uranus > a > img:hover
+{
+    height: 60px;
+    width: 60px;
+    transition: 350ms;
+    
+}
+
+
+@keyframes uranus-text
+{
+    0%
+    {
+        transform: rotate(15deg) translate(305px) rotate(-15deg);
+    }
+
+    100%
+    {
+        transform: rotate(375deg) translate(305px) rotate(-375deg);
+    }
+}
+
+@keyframes uranus-img
+{
+    0%
+    {
+        transform: rotate(0deg) translate(0) rotate(0deg);
+    }
+
+    100%
+    {
+        transform: rotate(0deg) translate(0) rotate(360deg);
+    }
+}
+
+
+/* -------------------------Saturn------------------------- */
+.saturn-container
+{
+    position: absolute;
+    height: 500px;
+    width: 500px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid rgb(15, 15, 15, 0.3);
+    
+}
+
+.saturn
+{
+    animation: saturn-text 37000ms linear infinite;
+    position: static;
+    color: white;
+    
+}
+
+.saturn::before,
+.saturn::after
+{   
+    --scale:0;
+    position: absolute;
+    left: 50%;
+    top: -.25rem;
+    transform: translateX(-50%) translateY(-100%) scale(var(--scale));
+    transition: 100ms transform;
+    transform-origin: bottom center;
+    z-index: 10;
+}
+
+.saturn::before
+{
+    content: attr(data-tooltip);
+    width: max-content px;
+    background: rgba(72, 72, 74, 0.72);
+    padding: .5rem;
+    border-radius: .4rem;
+    text-align: center;
+}
+
+.saturn > a > img
+{
+    animation: saturn-img 10000ms linear infinite;
+    height: 60px;
+    width: 60px;
+    
+}
+
+.saturn:hover
+{
+    animation-play-state: paused;
+    z-index: 1000;
+    
+}
+
+.saturn:hover::before
+{
+    --scale:1;
+}
+
+.saturn > a > img:hover
+{
+    height: 90px;
+    width: 90px;
+    transition: 350ms;
+    
+}
+
+
+@keyframes saturn-text
+{
+    0%
+    {
+        transform: rotate(30deg) translate(250px) rotate(-30deg);
+    }
+
+    100%
+    {
+        transform: rotate(390deg) translate(250px) rotate(-390deg);
+    }
+}
+
+@keyframes saturn-img
+{
+    0%
+    {
+        transform: rotate(0deg) translate(0) rotate(0deg);
+    }
+
+    100%
+    {
+        transform: rotate(0deg) translate(0) rotate(360deg);
+    }
+}
+
+
+/* -------------------------Jupiter------------------------- */
+.jupiter-container
+{
+    
+    position: absolute;
+    height: 400px;
+    width: 400px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid rgb(15, 15, 15, 0.3);
+    
+}
+
+.jupiter
+{
+    animation: jupiter-text 30000ms linear infinite;
+    position: static;
+    color: white;
+    
+}
+
+.jupiter::before,
+.jupiter::after
+{   
+    --scale:0;
+    position: absolute;
+    left: 50%;
+    top: -.25rem;
+    transform: translateX(-50%) translateY(-100%) scale(var(--scale));
+    transition: 100ms transform;
+    transform-origin: bottom center;
+    z-index: 10;
+}
+
+.jupiter::before
+{
+    content: attr(data-tooltip);
+    width: max-content px;
+    background: rgba(72, 72, 74, 0.72);
+    padding: .5rem;
+    border-radius: .4rem;
+    text-align: center;
+}
+
+.jupiter > a > img
+{
+    animation: jupiter-img 9000ms linear infinite;
+    height: 70px;
+    width: 70px;
+    
+}
+
+.jupiter:hover
+{
+    animation-play-state: paused;
+    z-index: 1000;
+    
+}
+
+.jupiter:hover::before
+{
+    --scale:1;  
+}
+
+
+.jupiter > a > img:hover
+{
+    height: 100px;
+    width: 100px;
+    transition: 350ms;
+    
+}
+
+
+@keyframes jupiter-text
+{
+    0%
+    {
+        transform: rotate(50deg) translate(200px) rotate(-50deg);
+    }
+
+    
+    100%
+    {
+        transform: rotate(410deg) translate(200px) rotate(-410deg);
+    }
+}
+
+@keyframes jupiter-img
+{
+    0%
+    {
+        transform: rotate(0deg) translate(0) rotate(0deg);
+    }
+
+    100%
+    {
+        transform: rotate(0deg) translate(0) rotate(360deg);
+    }
+}
+
+
+
+/* -------------------------Mars------------------------- */
+.mars-container
+{
+    position: absolute;
+    height: 300px;
+    width: 300px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid rgb(15, 15, 15, 0.3);
+    
+}
+
+.mars
+{
+    animation: mars-text 25000ms linear infinite;
+    position: static;
+    color: white;
+    
+}
+
+.mars::before,
+.mars::after
+{   
+    --scale:0;
+    position: absolute;
+    left: 50%;
+    top: -.25rem;
+    transform: translateX(-50%) translateY(-100%) scale(var(--scale));
+    transition: 100ms transform;
+    transform-origin: bottom center;
+    z-index: 10;
+}
+
+.mars::before
+{
+    content: attr(data-tooltip);
+    width: max-content px;
+    background: rgba(72, 72, 74, 0.72);
+    padding: .5rem;
+    border-radius: .4rem;
+    text-align: center;
+}
+
+.mars > a > img
+{
+    animation: mars-img 8500ms linear infinite;
+    height: 30px;
+    width: 30px;
+    
+}
+
+.mars:hover
+{
+    animation-play-state: paused;
+    z-index: 1000;
+    
+}
+
+.mars:hover::before
+{
+    --scale:1;  
+}
+
+
+.mars > a > img:hover
+{
+    height: 70px;
+    width: 70px;
+    transition: 350ms;
+    
+}
+
+
+@keyframes mars-text
+{
+    0%
+    {
+        transform: rotate(80deg) translate(150px) rotate(-80deg);
+    }
+
+    
+    100%
+    {
+        transform: rotate(440deg) translate(150px) rotate(-440deg);
+    }
+}
+
+@keyframes mars-img
+{
+    0%
+    {
+        transform: rotate(0deg) translate(0) rotate(0deg);
+    }
+
+    100%
+    {
+        transform: rotate(0deg) translate(0) rotate(360deg);
+    }
+}
+
+
+
+
+/* -------------------------Earth------------------------- */
+.earth-container
+{
+    position: absolute;
+    height: 240px;
+    width: 240px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid rgb(15, 15, 15, 0.3);
+    
+}
+
+.earth
+{
+    animation: earth-text 16000ms linear infinite;
+    position: static;
+    color: white;
+    
+}
+
+.earth::before,
+.earth::after
+{   
+    --scale:0;
+    position: absolute;
+    left: 50%;
+    top: -.25rem;
+    transform: translateX(-50%) translateY(-100%) scale(var(--scale));
+    transition: 100ms transform;
+    transform-origin: bottom center;
+    z-index: 10;
+}
+
+.earth::before
+{
+    content: attr(data-tooltip);
+    width: max-content px;
+    background: rgba(72, 72, 74, 0.72);
+    padding: .5rem;
+    border-radius: .4rem;
+    text-align: center;
+}
+
+.earth > a > img
+{
+    animation: earth-img 8000ms linear infinite;
+    height: 34px;
+    width: 34px;
+    
+}
+
+.earth:hover
+{
+    animation-play-state: paused;
+    z-index: 1000;
+    
+}
+
+.earth:hover::before
+{
+    --scale:1;  
+    
+}
+
+
+.earth > a > img:hover
+{
+    height: 70px;
+    width: 70px;
+    transition: 350ms;
+    
+}
+
+
+@keyframes earth-text
+{
+    0%
+    {
+        transform: rotate(100deg) translate(120px) rotate(-100deg);
+    }
+
+    
+    100%
+    {
+        transform: rotate(460deg) translate(120px) rotate(-460deg);
+    }
+}
+
+@keyframes earth-img
+{
+    0%
+    {
+        transform: rotate(0deg) translate(0) rotate(0deg);
+    }
+
+    100%
+    {
+        transform: rotate(0deg) translate(0) rotate(360deg);
+    }
+}
+
+
+
+/* -------------------------Venus------------------------- */
+.venus-container
+{
+    position: absolute;
+    height: 180px;
+    width: 180px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid rgb(15, 15, 15, 0.3);
+    
+}
+
+.venus
+{
+    animation: venus-text 12000ms linear infinite;
+    position: static;
+    color: white;
+    
+}
+
+.venus::before,
+.venus::after
+{   
+    --scale:0;
+    position: absolute;
+    left: 50%;
+    top: -.25rem;
+    transform: translateX(-50%) translateY(-100%) scale(var(--scale));
+    transition: 100ms transform;
+    transform-origin: bottom center;
+    z-index: 10;
+}
+
+.venus::before
+{
+    content: attr(data-tooltip);
+    width: max-content px;
+    background: rgba(72, 72, 74, 0.72);
+    padding: .5rem;
+    border-radius: .4rem;
+    text-align: center;
+}
+
+.venus > a > img
+{
+    animation: venus-img 7000ms linear infinite;
+    height: 29px;
+    width: 29px;
+    
+}
+
+.venus:hover
+{
+    animation-play-state: paused;
+    z-index: 1000;
+   
+}
+
+.venus:hover::before
+{
+    --scale:1;  
+}
+
+
+.venus > a > img:hover
+{
+    height: 70px;
+    width: 70px;
+    transition: 350ms;
+    
+}
+
+
+@keyframes venus-text
+{
+    0%
+    {
+        transform: rotate(130deg) translate(90px) rotate(-130deg);
+    }
+
+    
+    100%
+    {
+        transform: rotate(490deg) translate(90px) rotate(-490deg);
+    }
+}
+
+@keyframes venus-img
+{
+    0%
+    {
+        transform: rotate(0deg) translate(0) rotate(0deg);
+    }
+
+    100%
+    {
+        transform: rotate(0deg) translate(0) rotate(360deg);
+    }
+}
+
+
+
+/* -------------------------Mercury------------------------- */
+.mercury-container
+{
+    position: absolute;
+    height: 120px;
+    width: 120px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid rgb(15, 15, 15, 0.3);
+    
+    
+}
+
+.mercury
+{
+    animation: mercury-text 8000ms linear infinite;
+    position: static;
+    color: white;
+    
+}
+
+.mercury::before,
+.mercury::after
+{   
+    
+    --scale:0;
+    position: absolute;
+    left: 50%;
+    top: -.25rem;
+    transform: translateX(-50%) translateY(-100%) scale(var(--scale));
+    transition: 100ms transform;
+    transform-origin: bottom center;
+    z-index: 10;
+
+}
+
+
+.mercury::before
+{
+    content: attr(data-tooltip);
+    width: max-content px;
+    background: rgba(72, 72, 74, 0.72);
+    padding: .5rem;
+    border-radius: .4rem;
+    text-align: center;
+}
+
+.mercury > a > img
+{
+    animation: mercury-img 4000ms linear infinite;
+    height: 28px;
+    width: 28px;
+    
+}
+
+.mercury:hover
+{
+    animation-play-state: paused;
+    z-index: 1000;
+    
+    
+}
+
+.mercury:hover::before
+{
+    --scale:1;
+    
+    
+}
+
+
+.mercury > a > img:hover
+{
+    height: 70px;
+    width: 70px;
+    transition: 350ms;
+    
+    
+}
+
+
+@keyframes mercury-text
+{
+    0%
+    {
+        transform: rotate(160deg) translate(60px) rotate(-160deg);
+    }
+
+    
+    100%
+    {
+        transform: rotate(520deg) translate(60px) rotate(-520deg);
+    }
+}
+
+@keyframes mercury-img
+{
+    0%
+    {
+        transform: rotate(0deg) translate(0) rotate(0deg);
+    }
+
+    100%
+    {
+        transform: rotate(0deg) translate(0) rotate(360deg);
+    }
+} 
+
+
+
+/* -------------------------Sun------------------------- */
+.sun-container
+{
+    
+    position: absolute;
+    height: 0px;
+    width: 0px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid rgb(15, 15, 15, 0.3);
+    
+}
+
+.sun
+{
+    animation: sun-text 8000ms linear infinite;
+    position: static;
+    color: white;
+    
+}
+
+.sun::before,
+.sun::after
+{   
+    --scale:0;
+    position: absolute;
+    left: 50%;
+    top: -.25rem;
+    transform: translateX(-50%) translateY(-100%) scale(var(--scale));
+    transition: 100ms transform;
+    transform-origin: bottom center;
+    z-index: 10;
+    
+}
+
+.sun::before
+{
+    content: attr(data-tooltip);
+    width: max-content px;
+    background: rgba(72, 72, 74, 0.72);
+    padding: .5rem;
+    border-radius: .4rem;
+    text-align: center;
+}
+
+.sun > a > img
+{
+    animation: sun-img 20000ms linear infinite;
+    height: 70px;
+    width: 70px;
+    
+}
+
+.sun:hover
+{
+    animation-play-state: paused;
+    z-index: 1000;
+    
+}
+
+.sun:hover::before
+{
+    --scale:1;  
+    
+}
+
+
+.sun > a > img:hover
+{
+    height: 100px;
+    width: 100px;
+    transition: 350ms;
+    
+    
+}
+
+
+@keyframes sun-text
+{
+    0%
+    {
+        transform: rotate(0deg) translate(0px) rotate(0deg);
+    }
+
+    
+    100%
+    {
+        transform: rotate(0deg) translate(0px) rotate(0deg);
+    }
+}
+
+@keyframes sun-img
+{
+    0%
+    {
+        transform: rotate(0deg) translate(0) rotate(0deg);
+    }
+
+    100%
+    {
+        transform: rotate(0deg) translate(0) rotate(360deg);
+    }
+}
